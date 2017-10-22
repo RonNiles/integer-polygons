@@ -50,7 +50,7 @@ multiprecision binom(unsigned bn, unsigned bd) {
 /* Compute the number of m-gons with integer sides and perimeter n, using formula from East-Niles paper */
 
 multiprecision compute_mgon(unsigned m, unsigned n) {
-   unsigned denom = 4* m; /* want to work with integers, so this is the worst-case LCD */
+   unsigned denom = 4* m; /* want to work with integers, so this is the worst-case common denominator for all terms */
    multiprecision num = 0;
    unsigned gcd = compute_gcd(m, n);
 
